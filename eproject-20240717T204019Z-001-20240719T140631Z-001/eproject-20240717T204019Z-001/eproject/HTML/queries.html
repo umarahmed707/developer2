@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Wonder Queries</title>
+    <link rel="stylesheet" href="../CSS/queries.css">
+    <style>
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>World of Wonder Queries</h1>
+        <p>We value your feedback! Please fill out the form below.</p>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="country">Categories:</label>
+            <select id="country" name="country" style="height:25px;">
+                <option value="General">General</option>
+                <option value="Technical">Technical Support</option>
+                <option value="Billing">Billing</option>
+                <option value="others">others</option>
+            </select>
+            <br><br><br>
+            <label for="country" style="margin-top: 15px;">Popular Queries:</label>
+            <select id="country" name="country" style="height:25px;">
+                <option value="usa">How do i reset my password?</option>
+                <option value="canada">How can i contact support?</option>
+                <option value="australia">What is your refund policy?</option>
+            </select><br>
+
+            <label for="Queries" style="margin-top: 15px;">Your Queries:</label>
+            <textarea id="Queries" name="Queries" placeholder="message...." required></textarea>        
+<br>
+            <button type="submit">Submit Queries</button>
+        </form>
+        <div id="thankYouMessage" style="display:none;">
+            <h2>Thank you for your feedback!</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('QueriesForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+  
+    document.getElementById('thankYouMessage').style.display = 'block';
+    
+    document.getElementById('QueriesForm').style.display = 'none';
+});
+
+    </script>
+</body>
+</html>

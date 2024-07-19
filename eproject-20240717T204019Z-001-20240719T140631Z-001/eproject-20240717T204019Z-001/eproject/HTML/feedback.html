@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Wonder Feedback</title>
+    <link rel="stylesheet" href="../CSS/feedback.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>World of Wonder Feedback</h1>
+        <p>We value your feedback! Please fill out the form below.</p>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="country">Wonder of City:</label>
+            <select id="country" name="country" style="height:25px;">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+            <br><br>
+            <br>
+            <label for="feedback" style="margin-top: 15px;">Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="message....." required></textarea>        
+<br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <div id="thankYouMessage" style="display:none;">
+            <h2>Thank you for your feedback!</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Optionally, you can process the form data here or send it to a server
+    
+    // Display the thank you message
+    document.getElementById('thankYouMessage').style.display = 'block';
+    
+    // Hide the form
+    document.getElementById('feedbackForm').style.display = 'none';
+});
+
+    </script>
+</body>
+</html>

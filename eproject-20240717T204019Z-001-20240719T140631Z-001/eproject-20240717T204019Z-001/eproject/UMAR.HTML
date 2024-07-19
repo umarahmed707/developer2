@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .card-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.card-slider-container {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.card {
+  flex: 0 0 300px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Add some basic animations */
+.card-slider-container {
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-slider-container:hover .card {
+  transform: scale(1.1);
+}
+
+/* JavaScript */
+footer {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section .social a {
+    margin-right: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="card-slider">
+        <div class="card-slider-container">
+          <div class="card">
+            <img src="image1.jpg" alt="Image 1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="card">
+            <img src="image2.jpg" alt="Image 2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="card">
+            <img src="image3.jpg" alt="Image 3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <!-- Add more cards here -->
+        </div>
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+      </div>
+
+
+
+
+
+
+
+
+
+      <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+               <img src="../MY EPROJECT/IMAGES/logo pic.png" alt="" height="180px" width="180px">
+            </div>
+            <div class="footer-section links">
+                <p>  WOW Skin Science Products are completely free from  Harmful Sulphates, Silicones & Parabens. Our Products are safe, nature inspired & dermatologically tested for your safety. Try  Today & Fall in love with the complete rangebr of Nutrition, Skin Care, Hair Care and Bath & Body Products.</p>
+            </div>
+            <div class="footer-section contact">
+                
+        <ul  style="  padding: 5px 5px; background-color: white; font-size: 15px; padding: 0% 20px;">
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SKIN</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HAIR</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                BATH & BODY</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li><a href="">FRAGRANCE</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                NUTRITION</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li><a href="">GIFT SET</a></li>
+            <li><a href="">COMBOS</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                COLLECTION</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li><a href="">NEW LAUNCH</a></li>
+            <li><a href="">BLOGS</a></li>
+            
+        </ul>
+    </div>
+   
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        const cardSlider = document.querySelector('.card-slider');
+const cardSliderContainer = document.querySelector('.card-slider-container');
+const cards = document.querySelectorAll('.card');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentCardIndex = 0;
+
+prevButton.addEventListener('click', () => {
+  currentCardIndex--;
+  if (currentCardIndex < 0) {
+    currentCardIndex = cards.length - 1;
+  }
+  cardSliderContainer.style.transform = `translateX(-${currentCardIndex * 300}px)`;
+});
+
+nextButton.addEventListener('click', () => {
+  currentCardIndex++;
+  if (currentCardIndex >= cards.length) {
+    currentCardIndex = 0;
+  }
+  cardSliderContainer.style.transform = `translateX(-${currentCardIndex * 300}px)`;
+
+
+
+
+});
+      </script>
+
+
+
+
+
+
+<img src="../IMAGES/pic 5.webp" class="rounded float-start" alt="..." height="430px">
+<img src="../IMAGES/pic 6.webp" class="rounded float-end" alt="..." height="200px ">
+<img src="../IMAGES/pic 7.webp" class="rounded float-start" alt="..." height="200px"  style="margin-left: 15px;">
+<img src="../IMAGES/pic 8.webp" class="rounded float-end" alt="..." style="margin-top: 10px;" height="225px">  
+<img src="../IMAGES/pic 9.webp" class="rounded float-start" alt="..." height="225px"  style="margin-left: 15px; margin-top:10px;">
+</div>
+
+<BR></BR>
+<BR></BR> <br>
+<br>
+<div style="margin: 50px; ">
+<img src="../IMAGES/pic 16.jpg" class="rounded float-start" alt="..." style="margin-top: 40px;">
+<img src="../IMAGES/pic 17.jpg" class="rounded float-end" alt="..." style="margin-top: 40px; ">
+</div>
+<div style="margin: 25px; margin-bottom: 25px; " >
+  <img src="../IMAGES/pic 10.webp" class="rounded float-start" alt="..." height="500px" style="margin-top: 25px;">
+  <img src="../IMAGES/pic 11.webp" class="rounded float-start" alt="..." height="245px" width="520px" style="margin-left: 25px;margin-top: 25px; ">
+  <img src="../IMAGES/pic 15.webp" class="rounded float-start" alt="..." height="245px" width="520px" style="margin-left: 25px; margin-top: 10px;">
+</div>  
+
+</body>
+</html>
